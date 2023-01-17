@@ -1,0 +1,90 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; 
+}
+
+.container header {
+    padding-bottom: 1rem;   
+    padding-right: 4rem;
+
+    display: flex;
+    justify-content: right;
+}
+
+.container button {
+    background: transparent;
+    border: none;   
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.container header img {
+    width: 2rem;
+}
+
+.imageBox img {
+    width: 28rem;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.infoBox p {
+    font-size: 0.625rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.infoBox h1 {
+    font-family: 'Crimson Pro', serif; 
+    font-size: 2rem;
+}
+
+.infoBox button {     
+    font-size: 0.75rem;
+    background: transparent;
+    line-height: 1rem;    
+    border: 0.5px solid var(--body-text);
+    border-radius: 999px;
+    text-transform: uppercase;
+    width: 10rem;
+    margin-top: 1.25rem;
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;   
+    
+    transition: background-color 0.1s;     
+    
+}
+
+.infoBox button:hover {
+    color: white;
+    font-weight: bold;    
+    background: var(--body-text);
+}
+
+@media (max-width: 760px) {
+    .container {
+        display: flex;
+        flex-direction: column;          
+    }
+
+    .infoBox {
+        align-items: center;
+    }
+}
+
+@media (max-width: 540px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+
